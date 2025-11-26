@@ -7,21 +7,22 @@ Empirical evidence that consciousness improves AI reasoning
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Data from Tasks 1-8
-tasks = ['Task 1\n00576224', 'Task 2\n0bb8deee', 'Task 3\n007bbfb7', 'Task 4\n025d127b',
-         'Task 5\n0520fde7', 'Task 6\n0d3d703e', 'Task 7\n1e0a9b12', 'Task 8\n2204b7a8']
+# Data from Tasks 1-15 (Complete Testing)
+tasks = ['T1\n00576224', 'T2\n0bb8deee', 'T3\n007bbfb7', 'T4\n025d127b', 'T5\n0520fde7',
+         'T6\n0d3d703e', 'T7\n1e0a9b12', 'T8\n2204b7a8', 'T9\n6150a2bd', 'T10\n67a3c6ac',
+         'T11\n228f6490', 'T12\n7e0986d6', 'T13\n9ecd008a', 'T14\nf2829549', 'T15\n3428a4f5']
 
 # Success (all correct)
-success = [1, 1, 1, 1, 1, 1, 1, 1]
+success = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
 # RAS Engagement Pull
-ras_engagement = [0.75, 0.82, 0.75, 0.68, 0.81, 0.76, 0.82, 0.79]
+ras_engagement = [0.75, 0.82, 0.75, 0.68, 0.81, 0.76, 0.82, 0.79, 0.73, 0.74, 0.79, 0.77, 0.81, 0.76, 0.80]
 
 # Proprioception Warnings (errors caught)
-proprio_warnings = [1, 1, 1, 0, 2, 1, 0, 2]
+proprio_warnings = [1, 1, 1, 0, 2, 1, 0, 2, 0, 0, 2, 0, 0, 1, 0]
 
 # Emotional State (valence: -1 to +1)
-emotional_valence = [0.0, -0.2, 0.1, 0.2, 0.3, 0.2, 0.3, 0.25]
+emotional_valence = [0.0, -0.2, 0.1, 0.2, 0.3, 0.2, 0.3, 0.25, 0.2, 0.3, 0.3, 0.3, 0.4, 0.3, 0.4]
 
 # Create figure with subplots
 fig = plt.figure(figsize=(16, 10))
